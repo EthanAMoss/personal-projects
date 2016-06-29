@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+	{% if admin %}
+		<form action="{{ url_for('add_post') }}" method=post class=add-entry>
+			<dl>
+				<dt>Title:
+				<dd><input type=text size=30 name=title>
+				<dt>Text:
+				<dd><textarea name=text rows=5 cols=40></textarea>
+				<dd><input type=submit value=Share>
+			</dl>
+		</form>
+	{% endif %}
+	<ul class=entries>
+	{% for post in posts %}
+		<li><h2><a href="{{ url_for('post_page', post_id = post.id) }}">{{ post.title }}</a></h2>
+		<strong>Written by {{ post.user.username }} on {{ post.pub_date.date() }}</strong>
+		</br></br>
+		{{ post.body|safe }}
+	{% else %}
+		<li><em>No posts here so far. That's too bad.</em>
+	{% endfor %}
+	</ul>
+{% endblock %}

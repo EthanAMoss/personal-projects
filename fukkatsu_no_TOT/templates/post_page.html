@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block body %}
+	<h2>{{ post.title }}</h2>
+	<strong>Written by {{ post.user.username }} on {{ post.pub_date.date() }}</strong>
+	</br></br>
+	{{ post.body|safe }}
+{% endblock %}
