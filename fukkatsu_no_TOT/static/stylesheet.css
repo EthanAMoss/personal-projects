@@ -1,0 +1,674 @@
+BODY {
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+color: #000000;
+background-color: #D4D4D4;}
+
+p {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+color: #000000;}
+
+a {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+font-weight: bold;
+color: #003399;
+text-decoration: none;}
+
+a:hover {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+font-weight: bold;
+color: #000000;
+text-decoration: none;}
+
+
+.introText {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+color: #000000;}
+
+.smallText {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+color: #000000;}
+
+.titleHumor {
+font-family: Tahoma, Arial, sans-serif;
+font-size: 24pt;
+font-weight: bold;
+color: #000000;
+background-color: #FFCCCC;
+padding-left: 15px;}
+
+.titleMedia {
+font-family: Tahoma, Arial, sans-serif;
+font-size: 24pt;
+font-weight: bold;
+color: #000000;
+background-color: #FFCC99;
+padding-left: 15px;}
+
+.titleImages {
+font-family: Tahoma, Arial, sans-serif;
+font-size: 24pt;
+font-weight: bold;
+color: #000000;
+background-color: #FFFFCC;
+padding-left: 15px;}
+
+.titleInfo {
+font-family: Tahoma, Arial, sans-serif;
+font-size: 24pt;
+font-weight: bold;
+color: #000000;
+background-color: #CCFFCC;
+padding-left: 15px;}
+
+.titleFanfics {
+font-family: Tahoma, Arial, sans-serif;
+font-size: 24pt;
+font-weight: bold;
+color: #000000;
+background-color: #CCFFFF;
+padding-left: 15px;}
+
+.titleGames {
+font-family: Tahoma, Arial, sans-serif;
+font-size: 24pt;
+font-weight: bold;
+color: #000000;
+background-color: #CCCCFF;
+padding-left: 15px;}
+
+.titleMisc {
+font-family: Tahoma, Arial, sans-serif;
+font-size: 24pt;
+font-weight: bold;
+color: #000000;
+background-color: #FFCCFF;
+padding-left: 15px;}
+
+.titleLinks {
+font-family: Tahoma, Arial, sans-serif;
+font-size: 24pt;
+font-weight: bold;
+color: #000000;
+background-color: #CCCCCC;
+padding-left: 15px;}
+
+.mainTableBorder {
+border: 4px #000000 dotted;}
+
+.subNavTableBorder {
+border: #000000;
+border-style: solid;
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;}
+
+.borderHumor {
+border: #FFCCCC;
+border-style: solid;
+border-top-width: 2px;
+border-right-width: 2px;
+border-bottom-width: 2px;
+border-left-width: 2px;}
+
+.borderMedia {
+border: #FFCC99;
+border-style: solid;
+border-top-width: 2px;
+border-right-width: 2px;
+border-bottom-width: 2px;
+border-left-width: 2px;}
+
+.borderImages {
+border: #FFFFCC;
+border-style: solid;
+border-top-width: 2px;
+border-right-width: 2px;
+border-bottom-width: 2px;
+border-left-width: 2px;}
+
+.borderInfo {
+border: #CCFFCC;
+border-style: solid;
+border-top-width: 2px;
+border-right-width: 2px;
+border-bottom-width: 2px;
+border-left-width: 2px;}
+
+.borderFanfics {
+border: #CCFFFF;
+border-style: solid;
+border-top-width: 2px;
+border-right-width: 2px;
+border-bottom-width: 2px;
+border-left-width: 2px;}
+
+.borderGames {
+border: #CCCCFF;
+border-style: solid;
+border-top-width: 2px;
+border-right-width: 2px;
+border-bottom-width: 2px;
+border-left-width: 2px;}
+
+.borderMisc {
+border: #FFCCFF;
+border-style: solid;
+border-top-width: 2px;
+border-right-width: 2px;
+border-bottom-width: 2px;
+border-left-width: 2px;}
+
+.borderLinks {
+border: #CCCCCC;
+border-style: solid;
+border-top-width: 2px;
+border-right-width: 2px;
+border-bottom-width: 2px;
+border-left-width: 2px;}
+
+.mainUpdates {
+font-family: Tahoma, Arial, sans-serif;
+font-size: 10pt;
+font-weight: bold;
+color: #FFFFFF;
+background-color: #000000;
+text-align: center;}
+
+.updateDate {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+font-style: italic;
+font-weight: bold;
+color: #000000;
+padding-left: 8px;}
+
+.mainTableBorderUpdates {
+border: #000000;
+border-style: dotted;
+border-top-width: thin;
+border-right-width: thin;
+border-bottom-width: thin;
+border-left-width: thin;}
+
+.updateText {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+color: #000000;
+padding-left: 4px;}
+
+.updateLink {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #000000;
+text-decoration: none;}
+
+.updateLink:hover {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #BBBBBB;
+text-decoration: none;}
+
+.navHumor {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #000000;
+text-decoration: none;
+background-color: #FFCCCC;
+letter-spacing: 1px;}
+
+.navHumor:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #FF0000;
+text-decoration: none;
+background-color: #FFCCCC;
+letter-spacing: 1px;}
+
+.navMedia {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #000000;
+text-decoration: none;
+background-color: #FFCC99;
+letter-spacing: 1px;}
+
+.navMedia:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #FF6600;
+text-decoration: none;
+background-color: #FFCC99;
+letter-spacing: 1px;}
+
+.navImages {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #000000;
+text-decoration: none;
+background-color: #FFFFCC;
+letter-spacing: 1px;}
+
+.navImages:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #FFFF00;
+text-decoration: none;
+background-color: #FFFFCC;
+letter-spacing: 1px;}
+
+.navInfo {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #000000;
+text-decoration: none;
+background-color: #CCFFCC;
+letter-spacing: 1px;}
+
+.navInfo:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #00FF00;
+text-decoration: none;
+background-color: #CCFFCC;
+letter-spacing: 1px;}
+
+.navFanfics {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #000000;
+text-decoration: none;
+background-color: #CCFFFF;
+letter-spacing: 1px;}
+
+.navFanfics:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #00FFFF;
+text-decoration: none;
+background-color: #CCFFFF;
+letter-spacing: 1px;}
+
+.navGames {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #000000;
+text-decoration: none;
+background-color: #CCCCFF;
+letter-spacing: 1px;}
+
+.navGames:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #0000FF;
+text-decoration: none;
+background-color: #CCCCFF;
+letter-spacing: 1px;}
+
+.navMisc {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #000000;
+text-decoration: none;
+background-color: #FFCCFF;
+letter-spacing: 1px;}
+
+.navMisc:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #FF00FF;
+text-decoration: none;
+background-color: #FFCCFF;
+letter-spacing: 1px;}
+
+.navLinks {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #000000;
+text-decoration: none;
+background-color: #CCCCCC;
+letter-spacing: 1px;}
+
+.navLinks:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+color: #666666;
+text-decoration: none;
+background-color: #CCCCCC;
+letter-spacing: 1px;}
+
+.smallNavHumor {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #000000;
+background-color: #FFFFFF;
+text-decoration: none;}
+
+.smallNavHumor:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #FF0000;
+text-decoration: none;
+background-color: #FFFFFF;}
+
+.smallNavMedia {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #000000;
+background-color: #FFFFFF;
+text-decoration: none;}
+
+.smallNavMedia:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #FF6600;
+text-decoration: none;
+background-color: #FFFFFF;}
+
+.smallNavImages {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #000000;
+background-color: #FFFFFF;
+text-decoration: none;}
+
+.smallNavImages:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #FFFF00;
+text-decoration: none;
+background-color: #FFFFFF;}
+
+.smallNavInfo {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #000000;
+background-color: #FFFFFF;
+text-decoration: none;}
+
+.smallNavInfo:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #00FF00;
+text-decoration: none;
+background-color: #FFFFFF;}
+
+.smallNavFanfics {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #000000;
+background-color: #FFFFFF;
+text-decoration: none;}
+
+.smallNavFanfics:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #00FFFF;
+text-decoration: none;
+background-color: #FFFFFF;}
+
+.smallNavGames {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #000000;
+background-color: #FFFFFF;
+text-decoration: none;}
+
+.smallNavGames:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #0000FF;
+text-decoration: none;
+background-color: #FFFFFF;}
+
+.smallNavMisc {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #000000;
+background-color: #FFFFFF;
+text-decoration: none;}
+
+.smallNavMisc:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #FF00FF;
+text-decoration: none;
+background-color: #FFFFFF;}
+
+.smallNavLinks {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #000000;
+background-color: #FFFFFF;
+text-decoration: none;}
+
+.smallNavLinks:hover {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+color: #666666;
+text-decoration: none;
+background-color: #FFFFFF;}
+
+.inHumor {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+font-style: italic;
+color: #000000;
+text-decoration: none;
+background-color: #FFCCCC;
+letter-spacing: 1px;}
+
+.inMedia {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+font-style: italic;
+color: #000000;
+text-decoration: none;
+background-color: #FFCC99;
+letter-spacing: 1px;}
+
+.inImages {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+font-style: italic;
+color: #000000;
+text-decoration: none;
+background-color: #FFFFCC;
+letter-spacing: 1px;}
+
+.inInfo {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+font-style: italic;
+color: #000000;
+text-decoration: none;
+background-color: #CCFFCC;
+letter-spacing: 1px;}
+
+.inFanfics {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+font-style: italic;
+color: #000000;
+text-decoration: none;
+background-color: #CCFFFF;
+letter-spacing: 1px;}
+
+.inGames {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+font-style: italic;
+color: #000000;
+text-decoration: none;
+background-color: #CCCCFF;
+letter-spacing: 1px;}
+
+.inMisc {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+font-style: italic;
+color: #000000;
+text-decoration: none;
+background-color: #FFCCFF;
+letter-spacing: 1px;}
+
+.inLinks {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+font-weight: bold;
+font-style: italic;
+color: #000000;
+text-decoration: none;
+background-color: #CCCCCC;
+letter-spacing: 1px;}
+.amvText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+}
+.amvLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #003399;
+	text-decoration: none;
+}
+.amvLink:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.worksEducation {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #336633;
+	text-decoration: underline;
+	font-weight: normal;
+}
+.worksPersonal {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+	color: #333366;
+	text-decoration: underline;
+}
+.worksFreelance {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+	color: #666633;
+	text-decoration: underline;
+}
+.worksEducation:hover {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+	text-decoration: none;
+	font-weight: normal;
+}
+.worksPersonal:hover {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.worksFreelance:hover {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.listEducation {
+	color: #336633;
+	list-style-position: outside;
+	list-style-type: square;
+}
+.listPersonal {
+	color: #333366;
+	list-style-position: outside;
+	list-style-type: square;
+}
+.listFreelance {
+
+	color: #666633;
+	list-style-position: outside;
+	list-style-type: square;
+}
+.contact {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+	margin-left: 5px;
+	padding-left: 5px;
+}
+.contactLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: underline;
+}
+.contactLink:hover {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}

@@ -1,7 +1,9 @@
 from flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash
 from flask_login import login_user, logout_user, current_user, login_required, LoginManager
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import desc
 from datetime import datetime
+import calendar as cal
 
 # Config
 DATABASE_PATH = 'sqlite:///templeotrunks.db'
@@ -9,6 +11,7 @@ DEBUG = True
 SECRET_KEY = 'development key'
 NORMAL_USER = 0
 SUPER_USER = 1
+POST_DATE_FORMAT = '%A, %m/%d%/%Y'
 
 # Create the application
 app = Flask(__name__)
@@ -90,6 +93,9 @@ class Post(db.Model):
     def __repr__(self):
         return "<Post '{}'>".format(self.title)
 
+    def post_date(self):
+        return self.pub_date.strftime(POST_DATE_FORMAT)
+
 class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50))
@@ -159,6 +165,22 @@ def add_post():
 
     return redirect(url_for('show_posts'))
 
+@app.route('/main')
+def tot_homepage():
+    """
+    Returns the
+    :return: main page
+    """
+    user_level = NORMAL_USER
+
+    posts = Post.query.order_by(desc(Post.pub_date))
+
+    if g.user.is_authenticated and g.user.role == SUPER_USER:
+        user_level = SUPER_USER
+
+    return render_template('tot_main_page_flask.html', posts=posts, admin=(user_level == SUPER_USER),
+                           date_format=POST_DATE_FORMAT)
+
 
 @app.route('/post/<int:post_id>')
 def post_page(post_id):
@@ -212,6 +234,13 @@ def logout():
 
     return redirect(url_for('show_posts'))
 
+
+# Custom filters
+@app.template_filter('posting_date')
+def format_post_date(date):
+    date_string = cal.day_name[date.weekday()] + ', ' + str(date.month) + '/' + str(date.day) + '/' + str(date.year)
+
+    return date_string
 
 if __name__ == '__main__':
     # Set up the database
