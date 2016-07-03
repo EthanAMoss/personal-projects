@@ -181,6 +181,16 @@ def tot_homepage():
     return render_template('tot_main_page_flask.html', posts=posts, admin=(user_level == SUPER_USER),
                            date_format=POST_DATE_FORMAT)
 
+@app.route('/past')
+def past_updates():
+    """
+    Returns the past updates page
+    :return: past updates page
+    """
+
+    posts = Post.query.order_by(desc(Post.pub_date))
+
+    return render_template('tot_past_updates_flask.html', posts=posts)
 
 @app.route('/post/<int:post_id>')
 def post_page(post_id):
