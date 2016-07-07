@@ -68,6 +68,27 @@ class User(db.Model):
         return False
 
 
+class Update(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    body = db.Column(db.Text)
+    pub_date = db.Column(db.DateTime)
+    date_string = db.Column(db.String(25))
+
+    def __init__(self, body, pub_date=None, date_string=None):
+        self.body = body
+
+        if pub_date is None:
+            pub_date = datetime.utcnow()
+        self.pub_date = pub_date
+
+        if date_string is None:
+            date_string = pub_date.strftime(POST_DATE_FORMAT)
+        self.date_string = date_string
+
+    def __repr__(self):
+        return "Update '{}'".format(self.date_string)
+
+
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(80))
@@ -168,7 +189,7 @@ def add_post():
 @app.route('/main')
 def tot_homepage():
     """
-    Returns the
+    Returns Temple O' Trunks' main page
     :return: main page
     """
     user_level = NORMAL_USER
@@ -191,6 +212,26 @@ def past_updates():
     posts = Post.query.order_by(desc(Post.pub_date))
 
     return render_template('tot_past_updates_flask.html', posts=posts)
+
+@app.rout('/add_update')
+def add_update():
+    """
+    Adds an update, if the user has that privilege
+    :return: TOT main page
+    """
+    if not session.get('logged_in'):
+        abort(401)
+
+    elif g.user.role != SUPER_USER:
+        flash('You are not authorized to add an update')
+
+    else:
+        post = Post(request.form['text'], request.form['date'], request.form['datestring'])
+        db.session.add(post)
+        db.session.commit()
+        flash('New update was successfully posted')
+
+    return redirect(url_for('show_posts'))
 
 @app.route('/post/<int:post_id>')
 def post_page(post_id):
